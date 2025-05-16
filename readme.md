@@ -5,6 +5,7 @@ Os dados de cotação são obtidos da API pública da [CoinGecko](https://www.co
 
 ## 🚀 Tecnologias Utilizadas
 
+* WebSocket – comunicação em tempo real entre cliente e servidor
 * [Redis](https://redis.io/) (via Docker) – utilizado para cache das cotações
 * [Express](https://expressjs.com/) – servidor backend em Node.js
 * HTML e CSS – estrutura e estilo da interface
