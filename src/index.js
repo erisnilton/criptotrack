@@ -33,6 +33,6 @@ wss.on("connection", async (ws) => {
 });
 
 
-app.listen(3001, ()=> {
-  console.log('Servidor rodando na porta 3000')
+app.listen(8080, ()=> {
+  console.log('Servidor rodando na porta 8080')
 })
