@@ -68,6 +68,10 @@ body {
   border: 1px solid #403d46;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .content__card-content--header {
@@ -107,6 +111,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #000;
+  margin-bottom: 1rem;
 }
 
 .content__card-header {
@@ -181,6 +186,12 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.last_time_update {
+  font-size: 0.8rem;
+  color: #a1a1aa;
+  margin-top: 1rem;
 }
 
 @keyframes blink {

@@ -41,8 +41,9 @@
           </div>
           <div class="content__card-content-item">{{Intl.NumberFormat('pt-BR', {style: 'currency', currency:
             'BRL'}).format(item.value)}}</div>
+          </div>
+          <span class="last_time_update">{{ `Atualizado: ${lastTimeUpdate.toLocaleTimeString()}`}}</span>
         </div>
-      </div>
     </div>
 
 
@@ -102,6 +103,7 @@
       const dataDiff = ref({})
       const dataMaped = ref([])
       const rank = ref([])
+      const lastTimeUpdate = ref(new Date())
 
       const assetMetadata = {
         "basic-attention-token": { name: "Basic Attention Token", symbol: "BAT" },
@@ -160,10 +162,12 @@
         data.value = Object.fromEntries(
           Object.entries(message).map(([key, value]) => [key, value.brl])
         );
+        lastTimeUpdate.value = new Date()
       });
       return {
         rank,
-        dataMaped
+        dataMaped,
+        lastTimeUpdate,
       };
     },
   });
