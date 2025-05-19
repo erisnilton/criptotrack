@@ -49,6 +49,6 @@ Abra o navegador e acesse `http://localhost:8080` para visualizar a aplicação.
 
 ## 📸 Demonstração
 
-![Demonstração do Cripto Track]('https://github.com/erisnilton/criptotrack/blob/main/public/demo.gif')
+![Demonstração do Cripto Track](public/demo.gif)
 
 *Desenvolvido com 💻 por Erisnilton Freitas*
